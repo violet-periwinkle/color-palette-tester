@@ -1,0 +1,33 @@
+#container{
+    margin: 0px;
+    height: 80vh;
+    border: 1px solid black;
+    resize: both;
+    overflow: auto;
+    display: flex;
+}
+.swatch{
+    display: inline-block;
+    background-color: grey;
+    margin: 0.25rem;
+    flex-grow: 1;
+}
+input[type=color]{
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+#paintbox{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+}
+#paintbox input{
+    width: 100%;
+    box-sizing: border-box;
+}
+#paintbox button{
+    grid-row-end: span 2;
+}
