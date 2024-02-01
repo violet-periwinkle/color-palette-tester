@@ -14,7 +14,7 @@
             <label for="background-color">background</label>
             <input type="color" id="background-color" name="background-color" value="#ffffff">
             <label for="color-amount">colors</label>
-            <input type="number" min="0" id="color-amount" name="color-amount">
+            <input type="number" id="color-amount" name="color-amount">
             <div id="paintbox">
             </div>
         </fieldset>
@@ -25,12 +25,12 @@
                 <option>rows</option>
             </select>
             <label for="spacing">spacing</label>
-            <input type="range" id="spacing" name="spacing" min="0" max="2" step="0.125" value="0.25">
+            <input type="range" id="spacing" name="spacing" min="0" max="4" step="0.125" value="0.25">
         </fieldset>
+        <input type="submit" value="link to palette">
     </form>
     <div id="container">
     </div>
 </body>
 <script src="script.js"></script>
-
 </html>
